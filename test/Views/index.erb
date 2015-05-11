@@ -1,0 +1,40 @@
+<html>
+
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+</head>
+
+
+<body>
+
+  <script>
+
+    console.log('script loaded')
+
+    var app = app || {};
+
+    app.getFighter = function getFighter() {
+      $.ajax({
+        method: 'get',
+        url: 'http://gateway.marvel.com:80/v1/public/characters?name=thor&apikey=195de66a5cefd39b309c2eb0ca7463f1',
+        dataType: 'json',
+        success: function(data){
+          console.log(data);
+          id = data.data.results[0].id;
+          name = data.data.results[0].name;
+          description = data.data.results[0].description;
+          path = data.data.results[0].thumbnail.path;
+          extension = data.data.results[0].thumbnail.extension;
+          thumbnail = path + "." + extension;
+        }
+          // var fighter = new app.FighterModel(data);
+          // var fighterView = new app.FighterView( {model: fighter} );
+          // view.render();
+      })
+    };
+
+  </script>
+
+</body>
+
+</html>
