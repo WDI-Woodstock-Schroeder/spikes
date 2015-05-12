@@ -1,13 +1,71 @@
 @import '/Users/Marion/dev/wdi/spikes/test/vendor/Skeleton-2.0.4/css/normalize.css';
 @import '/Users/Marion/dev/wdi/spikes/test/vendor/Skeleton-2.0.4/css/skeleton.css';
 
+$blue: rgba(20, 133, 204, 1);
+$red: rgba(255, 0, 0, 1);
 
-.hero-thumb{
-  border-radius: 100%;
-  width: 100%;
+*{
+  display: block;
+}
+body {
+  padding: 0px;
+  margin: 0px;
 }
 
-.nemesis-thumb{
+
+#wrapper{
+
+}
+
+nav{
+  height: 10%;
+}
+
+.container{
+  height: 80%;
+}
+
+
+footer{
+  height: 10%;
+}
+
+.logo{
+
+}
+
+.row{
+  padding: 10% 0;
+  height: 40%;
+}
+
+#hero-list{
+  width: 50%;
+  // margin: 0 auto;
+  padding: 0;
+  float: left;
+}
+
+#nemesis-list{
+  width: 50%;
+  // margin: 0 auto;
+  padding: 0;
+  float: left;
+}
+
+
+img.hero-thumb{
+  width: 90%;
+  margin: 5px;
+  padding: 2px;
   border-radius: 100%;
-  width: 100%;
+  border: 2px solid rgba(20, 133, 204, 1);
+}
+
+img.nemesis-thumb{
+  width: 90%;
+  margin: 5px;
+  padding: 2px;
+  border-radius: 100%;
+  border: 2px solid rgba(255, 0, 0, 1);
 }
