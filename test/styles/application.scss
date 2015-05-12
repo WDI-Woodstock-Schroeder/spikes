@@ -27,7 +27,7 @@ nav{
 
 
 footer{
-  height: 10%;
+  height: 5%;
 }
 
 .logo{
@@ -35,24 +35,22 @@ footer{
 }
 
 .row{
-  padding: 10% 0;
-  height: 40%;
+  height: 20%;
 }
 
 #hero-list{
-  width: 50%;
-  // margin: 0 auto;
+  width: 45%;
+  margin-right: 5%;
   padding: 0;
   float: left;
 }
 
 #nemesis-list{
-  width: 50%;
-  // margin: 0 auto;
+  width: 45%;
+  margin-left: 5%;
   padding: 0;
   float: left;
 }
-
 
 img.hero-thumb{
   width: 90%;
