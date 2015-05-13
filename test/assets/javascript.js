@@ -25,12 +25,18 @@ $(document).ready(function() {
     var char = $(this).data("character");
     console.log(char)
 
+    $(".hero-thumb").hide(700)
+
+    $(".selected-hero").show(700)
+
     $.ajax({
       method: 'get',
       url: 'http://gateway.marvel.com:80/v1/public/characters/" + char + "?apikey=195de66a5cefd39b309c2eb0ca7463f1',
       dataType: 'json',
       success: function(data){
         console.log(data);
+          $("#hero-list").hide
+
         name = data.data.results[0].name;
         description = data.data.results[0].description;
       }
@@ -43,6 +49,10 @@ $(document).ready(function() {
 
     var char = $(this).data("character");
     console.log(char)
+
+    $(".nemesis-thumb").hide(700)
+
+    $(".selected-nemesis").show(700)
 
     $.ajax({
       method: 'get',
